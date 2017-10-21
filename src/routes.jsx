@@ -11,7 +11,7 @@ console.log('routes', routes);
 
 export default (
   <Switch>
-    {routes}
+    {/*{routes}*/}
     {/*<Route exact path="/" key={uuid()} component={tabs[0].path} />*/}
     <Route render={() => <h1>PAGE NOT FOUND!</h1>} />
   </Switch>
