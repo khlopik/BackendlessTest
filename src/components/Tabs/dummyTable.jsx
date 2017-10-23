@@ -1,12 +1,7 @@
 import React from 'react';
 
 const dummyTable = () => (
-  <table>
-    <tr>
-      <td>Dummy</td>
-      <td>Table</td>
-    </tr>
-  </table>
+  <span>Dummy Table</span>
 );
 
 export default dummyTable;

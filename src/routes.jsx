@@ -1,18 +1,21 @@
 import React from 'react';
-import { Route, Switch } from 'react-router';
-import uuid from 'uuid';
-import { map } from 'lodash';
-import tabs from '@/data/tabs.json';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import { map, filter } from 'lodash';
+import data from '@/data/tabs.json';
 
-const routes = map(tabs, (item) => (
-  <Route exact path="/" key={item.id} component={require(item.path).default} />
-));
-console.log('routes', routes);
+const tabs = data.tabs;
 
 export default (
   <Switch>
-    {/*{routes}*/}
-    {/*<Route exact path="/" key={uuid()} component={tabs[0].path} />*/}
+    {map(tabs, item => (
+      <Route
+        exact
+        path={`/${item.id}`}
+        key={item.id}
+        component={require(`./${item.path}`).default}
+      />
+    ))}
+    <Redirect from='/' exact to={`${filter(tabs, ['order', 0])[0].id}`} />
     <Route render={() => <h1>PAGE NOT FOUND!</h1>} />
   </Switch>
 );

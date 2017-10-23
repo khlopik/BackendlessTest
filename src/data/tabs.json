@@ -1,20 +1,22 @@
-[
-  {
-    "id": "dummyTable",
-    "title": "Dummy Table",
-    "order": 1,
-    "path": "@/components/Tabs/dummyTable.js"
-  },
-  {
-    "id": "dummyChart",
-    "title": "Dummy Chart",
-    "order": 2,
-    "path": "@/components/Tabs/dummyChart.js"
-  },
-  {
-    "id": "dummyList",
-    "title": "Dummy List",
-    "order": 0,
-    "path": "@/components/Tabs/dummyList.js"
-  }
-]
+{
+  "tabs": [
+    {
+      "id": "dummyTable",
+      "title": "Dummy Table",
+      "order": 1,
+      "path": "components/Tabs/dummyTable.jsx"
+    },
+    {
+      "id": "dummyChart",
+      "title": "Dummy Chart",
+      "order": 2,
+      "path": "components/Tabs/dummyChart.jsx"
+    },
+    {
+      "id": "dummyList",
+      "title": "Dummy List",
+      "order": 0,
+      "path": "components/Tabs/dummyList.jsx"
+    }
+  ]
+}
