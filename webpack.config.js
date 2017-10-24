@@ -13,6 +13,7 @@ module.exports = {
     'babel-polyfill',
     'webpack-dev-server/client?http://localhost:9000',
     'webpack/hot/only-dev-server',
+    'react-hot-loader/patch',
     './index.jsx',
   ],
   output: {

@@ -15,7 +15,7 @@ export default (
         component={require(`./${item.path}`).default}
       />
     ))}
-    {/*<Redirect from='/' exact to={`${filter(tabs, ['order', 0])[0].id}`} />*/}
+    <Redirect from='/' exact to={`${filter(tabs, ['order', 0])[0].id}`} />
     <Route render={() => <h1>PAGE NOT FOUND!</h1>} />
   </Switch>
 );
