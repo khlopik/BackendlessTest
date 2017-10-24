@@ -12,7 +12,7 @@ export default (
         exact
         path={`/${item.id}`}
         key={item.id}
-        component={require(`./${item.path}`).default}
+        component={require(`./components/${item.path}`).default}
       />
     ))}
     <Redirect from='/' exact to={`${filter(tabs, ['order', 0])[0].id}`} />
